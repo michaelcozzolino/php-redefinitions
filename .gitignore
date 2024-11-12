@@ -1,5 +1,4 @@
+.idea
 /.build/
 /.note/
-/.phive/
 /vendor/
-!/.phive/phars.xml
