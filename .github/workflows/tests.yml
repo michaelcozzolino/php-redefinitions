@@ -11,6 +11,7 @@ permissions:
 
 jobs:
     audit-and-lint:
+        name: 'Audit & Lint'
         runs-on: ubuntu-latest
 
         steps:
