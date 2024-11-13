@@ -5,17 +5,11 @@
     "type": "library",
     "authors": [
         {
-            "name": "Andreas Möller",
-            "email": "am@localheinz.com",
-            "homepage": "https://localheinz.com"
+            "name": "Michael Cozzolino",
+            "email": "michaelcozzolino@outlook.it",
+            "homepage": "https://michaelcozzolino.it"
         }
     ],
-    "homepage": "https://github.com/ergebnis/php-package-template",
-    "support": {
-        "issues": "https://github.com/ergebnis/php-package-template/issues",
-        "source": "https://github.com/ergebnis/php-package-template",
-        "security": "https://github.com/ergebnis/php-package-template/blob/main/.github/SECURITY.md"
-    },
     "scripts": {
         "psalm": [
             "vendor/bin/psalm --no-cache"
