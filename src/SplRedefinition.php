@@ -2,7 +2,6 @@
 
 namespace MichaelCozzolino\PhpRedefinitions;
 
-use Traversable;
 use function iterator_to_array;
 
 /**
@@ -11,14 +10,17 @@ use function iterator_to_array;
 class SplRedefinition
 {
     /**
+     * @psalm-suppress InvalidArgument Psalm is not able to understand that Traversable|array is iterable
+     *
      * @template TKey of array-key
      * @template TValue
-     * @param Traversable<TKey, TValue>|array<TKey, TValue> $iterator
-     * @param bool                                          $preserve_keys
+     *
+     * @param iterable<TKey, TValue> $iterator
+     * @param bool                   $preserve_keys
      *
      * @return array<TKey, TValue>
      */
-    public function iteratorToArray(Traversable | array $iterator, bool $preserve_keys = true): array
+    public function iteratorToArray(iterable $iterator, bool $preserve_keys = true): array
     {
         return iterator_to_array($iterator, $preserve_keys);
     }
