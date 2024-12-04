@@ -24,7 +24,7 @@
         "php": ">=8.2"
     },
     "require-dev": {
-        "ergebnis/composer-normalize": "^2.44.0",
+        "ergebnis/composer-normalize": "^2.45.0",
         "phpstan/extension-installer": "^1.4.3",
         "phpstan/phpstan": "^1.12.8",
         "phpstan/phpstan-deprecation-rules": "^1.2.1",
